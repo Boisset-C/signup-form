@@ -3,43 +3,69 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/styles.css" />
     <title>Sign Up Form</title>
   </head>
   <body>
-    <div class="container">
-      <div class="img-section">
-        <img
-          style="width: 500px; height: 500px"
-          src="/assets/ferns.jpg"
-          alt="Large green ferns to set the vibe of the page."
-        />
+    <div id="container">
+      <div
+        id="img-section"
+        alt="Large green ferns to set the vibe of the page."
+      >
+        <div class="banner">
+          <img src="assets/odin-lined.png" />
+          <p>ODIN</p>
+        </div>
       </div>
-      <div class="form-section">
+      <div id="form-section">
         <p class="info">
           This is not a real online service! You know you need something like
           this in your life to help you realize your deepest dreams. Sign up now
           to get started.
         </p>
-        <p class="hook">You know you want to</p>
-        <div class="form-container">
-          <form action="">
-            <label for="first_name">First name:</label>
-            <input type="text" id="first_name" />
-            <label for="last_name">Last name:</label>
-            <input type="text" id="last_name" />
-            <label for="email">Email:</label>
-            <input type="text" id="email" />
-            <label for="phone_number">Phone Number:</label>
-            <input type="text" id="phone_number" />
-            <label for="password">Password:</label>
-            <input type="text" id="password" />
-            <label for="confirm_password">Confirm password:</label>
-            <input type="text" id="confirm_password" />
-          </form>
-          <button>Create Account</button>
-          <p class="login">Already have an account?<span>Log in</span></p>
-        </div>
+        <p class="hook"><i>You know you want to</i></p>
+        <form action="">
+          <div id="form-container">
+            <div class="row">
+              <div class="col">
+                <label for="first_name">First name:</label>
+                <input type="text" id="first_name" />
+              </div>
+              <div class="col">
+                <label for="last_name">Last name:</label>
+                <input type="text" id="last_name" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <label for="email">Email:</label>
+                <input type="email" id="email" />
+              </div>
+              <div class="col">
+                <label for="phone_number">Phone Number:</label>
+                <input type="number" id="phone_number" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <label for="password">Password:</label>
+                <input type="text" id="password" />
+              </div>
+              <div class="col">
+                <label for="confirm_password">Confirm password:</label>
+                <input type="text" id="confirm_password" />
+              </div>
+            </div>
+          </div>
+        </form>
+        <button id="register">Create Account</button>
+        <p class="login">Already have an account?<b> Log in.</b></p>
       </div>
     </div>
   </body>

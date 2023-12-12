@@ -5,8 +5,108 @@
 
 :root {
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
-body {
-  background-color: aquamarine;
+#container {
+  display: flex;
+  background-color: rgb(249, 250, 251);
+}
+
+#img-section {
+  height: 100vh;
+  width: 40vw;
+  background-image: url("/assets/ferns.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.banner {
+  display: flex;
+  margin-top: 50%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0, 0.5);
+}
+
+.banner p {
+  align-self: center;
+  font-size: 48px;
+  font-weight: 900;
+  color: #fff;
+}
+
+.banner img {
+  height: 124px;
+  width: auto;
+  color: #fff;
+}
+
+#bg-image {
+  background-position: center;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+
+#form-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+}
+
+#form-container {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  flex-direction: column;
+  margin: 2rem 0rem;
+  padding: 2rem;
+  box-shadow: 0px 5px 5px 0px rgb(219, 220, 221, 0.8); /* Add the box shadow */
+  z-index: 1;
+}
+
+#form-container .row {
+  display: flex;
+  flex-direction: row;
+}
+
+#form-container .row .col {
+  display: flex;
+  padding: 0.5rem;
+  flex-direction: column;
+}
+
+#form-container .row .col label {
+  padding-bottom: 0.5rem;
+}
+
+#form-container .row .col input {
+  width: 250px;
+  height: 24px;
+  border-radius: 4px;
+}
+
+#register {
+  background-color: #596d48;
+  border: 1px solid #596d48;
+  color: #fff;
+  padding: 1rem;
+  margin: 2rem;
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.login {
+  margin: 2rem;
+}
+
+.info,
+.hook {
+  margin: 6rem 2rem 2rem 2rem;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0.75rem;
 }
